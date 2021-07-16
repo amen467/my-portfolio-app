@@ -1,7 +1,0 @@
-.slideshow img{
-  @media screen {
-    img[class="hide"] {
-      display:none;
-    }
-  }
-}

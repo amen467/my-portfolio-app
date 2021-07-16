@@ -9,6 +9,7 @@ function App() {
     <div className="app">
       <Header />
       <Slideshow />
+      <h1>HELOO BITCH</h1>
     </div>
   );
 }
