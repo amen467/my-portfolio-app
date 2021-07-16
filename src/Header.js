@@ -12,10 +12,8 @@ function Header() {
       </div>
 
       <div className="header-right">
-        
-            
-      </div>
-            
+            <a href="#second-page-jump">Second Page</a>
+      </div>     
     </div>
   )
 }

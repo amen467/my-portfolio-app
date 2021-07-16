@@ -1,6 +1,6 @@
 import React from 'react';
-//import { Counter } from './features/counter/Counter';
 import './App.css';
+import SecondPage from './SecondPage';
 import Header from "./Header"
 import Slideshow from './Slideshow';
 
@@ -9,7 +9,7 @@ function App() {
     <div className="app">
       <Header />
       <Slideshow />
-      <h1>HELOO BITCH</h1>
+      <SecondPage />
     </div>
   );
 }

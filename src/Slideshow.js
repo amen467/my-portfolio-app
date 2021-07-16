@@ -15,7 +15,7 @@ const slideImages=[
 function slideshow() {
   return (
     <div className="slideshow">
-      <Slide easing="ease">
+      <Slide easing="ease" duration="3000">
         <div className="each-slide">
           <div style={{'backgroundImage': `url(${slideImages[0]})`}}>
           </div>
