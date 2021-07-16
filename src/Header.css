@@ -5,6 +5,7 @@
     height: 120px;
     border-bottom: 1px solid white;
     background-color: black;
+    outline: red;
 }
 
 .header-left {
@@ -29,3 +30,12 @@
     color: white;
     justify-content: right;
 }
+
+@media screen and (max-width: 45em) {
+    .header-left h1{
+      display: flex;
+      align-items: center;
+      font-size: 30px;
+      text-align: center;
+    }
+  }
