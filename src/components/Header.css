@@ -1,8 +1,11 @@
 .header {
+    position: fixed;
+    z-index: 1;
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 120px;
+    width: 100%;
     background-color: black;
 }
 
@@ -33,14 +36,26 @@
     text-decoration: none;
     color: white;
     padding: 20px 20px;
-    font-size: 30px;
-}
+    font-size: 30px; 
+} 
+
 
 @media screen and (max-width: 45em) {
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 90px;
+        background-color: black;  
+    }
+
     .header-left h1{
       display: flex;
       align-items: center;
       font-size: 30px;
       text-align: center;
+    }
+    .header-right a {
+        font-size: 20px;
     }
   }

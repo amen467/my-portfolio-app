@@ -4,7 +4,7 @@ import './secondPage.css';
 function SecondPage() {
   return (
     <div className="second-page">
-      <h1 id="second-page-jump">Second Page</h1>
+      <p id="second-page-jump"></p>
     </div>
   )
 }

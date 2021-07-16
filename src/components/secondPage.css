@@ -1,3 +1,8 @@
 .second-page {
   height: 100vh;
 }
+
+#second-page-jump {
+  position:absolute;
+  z-index: -1;
+}
