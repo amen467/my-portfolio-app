@@ -1,15 +1,25 @@
 .slideshow {
   display: flex;
-  background-size: 100%;
   height: 91vh;
-  border-bottom: 2px solid black;
   margin-left: auto;
   margin-right: auto;
-  width: 77%;
 }
+
+.slide-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.slideshow img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+} 
 
 @media screen and (max-width: 45em) {
   .slideshow img {
     display: none;
   }
 }
+
