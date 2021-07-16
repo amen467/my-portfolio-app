@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
-import SecondPage from './SecondPage';
-import Header from "./Header"
-import Slideshow from './Slideshow';
+import SecondPage from './components/SecondPage';
+import Header from "./components/Header"
+import Slideshow from './components/Slideshow';
 
 function App() {
   return (

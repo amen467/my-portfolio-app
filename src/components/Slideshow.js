@@ -1,9 +1,9 @@
 import React from 'react'
 import { Slide } from 'react-slideshow-image';
 import './Slideshow.css';
-import emma from "./images/scale_2400.jpg";
-import watson from "./images/watson.jpg";
-import anya from "./images/anya-camera.jpg";
+import emma from "../images/scale_2400.jpg";
+import watson from "../images/watson.jpg";
+import anya from "../images/anya-camera.jpg";
 
 const slideImages=[
   emma,
