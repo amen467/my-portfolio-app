@@ -1,5 +1,8 @@
 @import "react-slideshow-image/dist/styles.css";
 
+.slideshow {
+  background-color: #1A1A1A;
+}
 .each-slide > div { 
   display: flex;
   align-items: center;
