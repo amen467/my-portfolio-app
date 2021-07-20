@@ -1,9 +1,9 @@
 import './App.css';
-import SecondPage from './components/SecondPage';
+import About from './components/About';
 import Header from "./components/Header"
 import Slideshow from './components/Slideshow';
 import Home from './Home';
-import AboutMe from './components/AboutMe';
+import Contact from './components/Contact';
 
 function App() {
   return (
@@ -11,8 +11,8 @@ function App() {
       <Header />
       <Home />
       <Slideshow />
-      <SecondPage />
-      <AboutMe />
+      <About />
+      <Contact />
     </div>
   );
 }

@@ -27,7 +27,8 @@ function Header() {
 
       <div className="header-right">
           <a href="#home">Home</a>
-          <a href="#second-page-jump">Second Page</a>
+          <a href="#second-page-jump">About</a>
+          <a href="#contact-jump">Contact</a>
       </div>     
 
       

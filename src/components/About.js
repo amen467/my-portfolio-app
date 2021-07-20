@@ -1,10 +1,10 @@
 //import React from 'react';
-import './secondPage.css';
+import './About.css';
 import dakota from "../images/selfie_dakota.jpg";
 
-function SecondPage() {
+function About() {
   return (
-    <div className="second-page">
+    <div className="about">
       <p id="second-page-jump"></p>
 
        <div className="selfie"> 
@@ -28,4 +28,4 @@ function SecondPage() {
   )
 }
 
-export default SecondPage
+export default About

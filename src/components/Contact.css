@@ -1,0 +1,21 @@
+#contact-jump {
+  margin-top: -70px; /* -120 to show a little of the bottom*/
+  position:absolute;
+  z-index: -1;
+}
+
+.contact {
+  display: flex;
+  height: 100vh;
+}
+
+.form-box {
+  display: flex;
+  margin-top: 18vh;
+  margin-left: auto;
+  margin-right: auto;
+  height: 60vh;
+  width: 35vw;
+  background-color: gray;
+  
+}
