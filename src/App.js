@@ -3,6 +3,7 @@ import SecondPage from './components/SecondPage';
 import Header from "./components/Header"
 import Slideshow from './components/Slideshow';
 import Home from './Home';
+import AboutMe from './components/AboutMe';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Home />
       <Slideshow />
       <SecondPage />
+      <AboutMe />
     </div>
   );
 }

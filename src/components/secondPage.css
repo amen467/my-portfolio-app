@@ -1,8 +1,35 @@
-.second-page {
-  height: 100vh;
-}
-
 #second-page-jump {
+  margin-top: -70px; /* -120 to show a little of the bottom*/
   position:absolute;
   z-index: -1;
 }
+
+.second-page {
+  display: flex;
+  height: 100vh;
+  background-color: #1A1A1A;
+}
+
+.selfie {
+  height: 35vw;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 4%;
+}
+
+.selfie img {
+  height: 35vw;
+}
+
+.description {
+  color: lightgray;
+  margin-top: 14%;
+  margin-bottom: auto;
+  padding-left: 6%;
+  padding-right: 7%;
+  max-width: 50%;
+  font-size: calc(12px + .5vw);
+  text-indent: 30pt;
+}
+
+
