@@ -1,35 +1,22 @@
 import './Contact.css';
 import React, { useState } from 'react';
+import { useForm, ValidationError } from '@formspree/react';
 // import { useInput } from '../../node_modules/use-input-hook/dist/index.es';
 
-function Contact(props) {
+function Contact() {
+  const [state, handleSubmit] = useForm("xgerlqqd");
+  if (state.succeeded) {
+    return(
+    <div className="contact">
+      <p id="contact-jump"></p>
 
-  const useContactForm = (callback) => {
-    const [inputs, setInputs] = useState({});
-    const handleSubmit = (event) => {
-      if (event) {
-        event.preventDefault();
-        callback();
-      }
-    }
-    const handleInputChange = (event) => {
-      event.persist();
-      setInputs(inputs => ({...inputs, [event.target.name]: event.target.value}));
-    }
-    return {
-      handleSubmit,
-      handleInputChange,
-      inputs
-    };
+      <div className="form-box">
+        <h1>Thanks for the message!</h1>
+      </div>
+      
+    </div>
+    )
   }
-
-  const contactAlert = () => {
-    alert(`Name: ${inputs.firstName} ${inputs.lastName}
-           Email: ${inputs.email}
-           Message: ${inputs.message}`);
-  }
-
-  const {inputs, handleInputChange, handleSubmit} = useContactForm(contactAlert);
 
   return (
     <div className="contact">
@@ -37,30 +24,39 @@ function Contact(props) {
 
       <div className="form-box">
 
+        <form onSubmit={handleSubmit}>
+        
+        <label htmlFor="email">
+          Email Address
+        </label>
 
-      <form onSubmit={handleSubmit} 
-        action="https://formspree.io/f/xgerlqqd" 
-        method="POST">
-        <div>
-          <label>First Name</label>
-          <input type="text" name="firstName" onChange={handleInputChange} value={inputs.firstName} required />
-          <label>Last Name</label>
-          <input type="text" name="lastName" onChange={handleInputChange} value={inputs.lastName} required />
-        </div>
-        <div>
-          <label>Email Address</label>
-          <input type="email" name="email" onChange={handleInputChange} value={inputs.email} required />
-        </div>
-        <div>
-          <label>Message</label>
-          <input type="text" name="message" onChange={handleInputChange} value={inputs.message} required />
-        </div>
-        <button type="submit">Submit</button>
+        <input
+          id="email"
+          type="email" 
+          name="email"
+        />
+
+        <ValidationError 
+          prefix="Email" 
+          field="email"
+          errors={state.errors}
+        />
+        <textarea
+          id="message"
+          name="message"
+        />
+        <ValidationError 
+          prefix="Message" 
+          field="message"
+          errors={state.errors}
+        />
+        
+        <button type="submit" disabled={state.submitting}>
+          Submit
+        </button>
       </form>
 
-
-      </div>
-      
+      </div>  
     </div>
   )
 }

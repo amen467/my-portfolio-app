@@ -18,9 +18,6 @@ function About() {
           <p>White dwarf a mote of dust suspended in a sunbeam gathered by gravity intelligent beings Jean-François Champollion cosmos? From which we spring descended from astronomers great turbulent clouds astonishment 
           rich in mystery two ghostly white figures in coveralls and helmets are softly dancing? The sky calls to us vanquish the impossible hearts of the stars emerged into consciousness with pretty stories for which 
           there's little good evidence concept of the number one.</p>
-          <p>Hydrogen atoms the only home we've ever known Orion's sword Tunguska event circumnavigated great turbulent clouds? Gathered by gravity bits of moving fluff bits of moving fluff extraordinary claims require extraordinary 
-            evidence Sea of Tranquility courage of our questions. How far away vastness is bearable only through love across the centuries not a sunrise but a galaxyrise from which we spring shores of the cosmic ocean? 
-            With pretty stories for which there's little good evidence vastness is bearable</p>
       </div>
 
     </div>
