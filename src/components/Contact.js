@@ -4,42 +4,65 @@ import React, { useState } from 'react';
 
 function Contact(props) {
 
-  const { value:firstName, bind:bindFirstName, reset:resetFirstName } = useState('');
-  const { value:lastName, bind:bindLastName, reset:resetLastName } = useState('');
-  const { value:email, bind:bindEmail, reset:resetEmail } = useState('');
-
-  const handleSubmit = (evt) => {
-      evt.preventDefault();
-      alert(`Submitting Name ${firstName} ${lastName} ${email}`);
-      // resetFirstName();
-      // resetLastName();
-      // resetEmail();
+  const useContactForm = (callback) => {
+    const [inputs, setInputs] = useState({});
+    const handleSubmit = (event) => {
+      if (event) {
+        event.preventDefault();
+        callback();
+      }
+    }
+    const handleInputChange = (event) => {
+      event.persist();
+      setInputs(inputs => ({...inputs, [event.target.name]: event.target.value}));
+    }
+    return {
+      handleSubmit,
+      handleInputChange,
+      inputs
+    };
   }
+
+  const contactAlert = () => {
+    alert(`Name: ${inputs.firstName} ${inputs.lastName}
+           Email: ${inputs.email}
+           Message: ${inputs.message}`);
+  }
+
+  const {inputs, handleInputChange, handleSubmit} = useContactForm(contactAlert);
 
   return (
     <div className="contact">
       <p id="contact-jump"></p>
 
       <div className="form-box">
-        <form onSubmit={handleSubmit}>
-          <label>
-            First Name:
-            <input type="text" {...bindFirstName} />
-          </label>
-          <label>
-            Last Name:
-            <input type="text" {...bindLastName} />
-          </label>
-          <label>
-            Email:
-            <input type="text" {...bindEmail} />
-          </label>
-          <input type="submit" value="Submit" />
-        </form>
+
+
+      <form onSubmit={handleSubmit} 
+        action="https://formspree.io/f/xgerlqqd" 
+        method="POST">
+        <div>
+          <label>First Name</label>
+          <input type="text" name="firstName" onChange={handleInputChange} value={inputs.firstName} required />
+          <label>Last Name</label>
+          <input type="text" name="lastName" onChange={handleInputChange} value={inputs.lastName} required />
+        </div>
+        <div>
+          <label>Email Address</label>
+          <input type="email" name="email" onChange={handleInputChange} value={inputs.email} required />
+        </div>
+        <div>
+          <label>Message</label>
+          <input type="text" name="message" onChange={handleInputChange} value={inputs.message} required />
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+
+
       </div>
       
     </div>
   )
 }
 
-export default Contact
+export default Contact;
