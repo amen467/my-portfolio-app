@@ -10,7 +10,7 @@ function Contact(props) {
 
   const handleSubmit = (evt) => {
       evt.preventDefault();
-      alert(`Submitting Name ${firstName} ${lastName}`);
+      alert(`Submitting Name ${firstName} ${lastName} ${email}`);
       // resetFirstName();
       // resetLastName();
       // resetEmail();

@@ -20,8 +20,7 @@ function About() {
           there's little good evidence concept of the number one.</p>
           <p>Hydrogen atoms the only home we've ever known Orion's sword Tunguska event circumnavigated great turbulent clouds? Gathered by gravity bits of moving fluff bits of moving fluff extraordinary claims require extraordinary 
             evidence Sea of Tranquility courage of our questions. How far away vastness is bearable only through love across the centuries not a sunrise but a galaxyrise from which we spring shores of the cosmic ocean? 
-            With pretty stories for which there's little good evidence vastness is bearable only through love Drake Equation inconspicuous motes of rock and gas paroxysm of global death with pretty stories for which 
-            there's little good evidence and billions upon billions upon billions upon billions upon billions upon billions upon billions.</p>
+            </p>
       </div>
 
     </div>
