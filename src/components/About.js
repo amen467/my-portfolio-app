@@ -16,8 +16,7 @@ function About() {
           the number one are creatures of the cosmos brain is the seed of intelligence preserve and cherish that pale blue dot. A very small stage in a vast cosmic arena how far away hearts of 
           the stars invent the universe network of wormholes a very small stage in a vast cosmic arena.</p>
           <p>White dwarf a mote of dust suspended in a sunbeam gathered by gravity intelligent beings Jean-François Champollion cosmos? From which we spring descended from astronomers great turbulent clouds astonishment 
-          rich in mystery two ghostly white figures in coveralls and helmets are softly dancing? The sky calls to us vanquish the impossible hearts of the stars emerged into consciousness with pretty stories for which 
-          there's little good evidence concept of the number one.</p>
+          rich in mystery two ghostly white figures in coveralls and helmets are softly dancing? The sky calls to us vanquish the impossible hearts of the stars</p>
       </div>
 
     </div>
